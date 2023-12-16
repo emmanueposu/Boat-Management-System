@@ -1,6 +1,6 @@
 # Boat Management System
 
-This project is a REST API with a UI for user login and account creation through Auth0. The API allows users to create and manage boats.\
+This project is a REST API with a UI for user login and account creation through Auth0. The API allows users to create and manage boats.
 Boats can have loads which are owned by users.
 
 Deployment URL:\

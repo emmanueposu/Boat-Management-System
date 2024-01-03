@@ -1,16 +1,18 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Auth0 App</title>
+    <title>Boat Management System</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
     {% if session %}
         <h1>Welcome {{session.userinfo.name}}!</h1>
-        <p><a href="/auth0/logout">Logout</a></p>
-        <div><pre>{{pretty}}</pre></div>
+        <a href="/auth0/logout" class="login-button">Logout</a>
+        <pre class="json-container">{{pretty}}</pre>
     {% else %}
         <h1>Welcome Guest</h1>
-        <p><a href="/auth0/login">Login</a></p>
+        <a href="/auth0/login" class="login-button">Login</a>
     {% endif %}
   </body>
+  <footer>© 2023 Prince Emmanuel</footer>
 </html>
